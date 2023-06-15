@@ -68,5 +68,11 @@ class CalculatorSuite extends FlatSpec with GivenWhenThen with Matchers {
     Calculator.calculate_percentage(500, 470) shouldBe 94
 
   }
+//
+  //  it should "test main" in {
+  //
+  //    noException shouldBe thrownBy(Calculator.main(Array("100", "20", "456", "242")))
+  //
+  //  }
 
 }

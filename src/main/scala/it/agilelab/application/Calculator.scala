@@ -54,17 +54,8 @@ object Calculator {
 
     val argsToNumber = args.map(_.toInt) //50 10 500 470
 
-    val firstNumber = argsToNumber(0) //50
-    val secondNumber = argsToNumber(1) //10
-    val total = argsToNumber(2) //500
-    val partial_amount = argsToNumber(3) //470
-
     //scalastyle:off printChecker
-    println(sum(firstNumber, secondNumber))
-    println(diff(firstNumber, secondNumber))
-    println(multiply(firstNumber, secondNumber))
-    println(divide(firstNumber, secondNumber))
-    println(calculate_percentage(total, partial_amount))
+    print(ResultsPrinter.printResults(argsToNumber))
 
   }
 }
