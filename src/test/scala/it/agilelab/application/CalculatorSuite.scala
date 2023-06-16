@@ -30,19 +30,19 @@ class CalculatorSuite extends FlatSpec with GivenWhenThen with Matchers {
 
   }
 
-  //  it should "test divide method exception" in {
-  //
-  //    Given("0 as denominator")
-  //    val x = 10
-  //    val y = 0
-  //
-  //    When("divide method is called")
-  //
-  //
-  //    Then("an exception must be raised")
-  //    an[ArithmeticException] shouldBe thrownBy(Calculator.divide(x, y))
-  //
-  //  }
+  it should "test divide method exception" in {
+
+    Given("0 as denominator")
+    val x = 10
+    val y = 0
+
+    When("divide method is called")
+
+
+    Then("an exception must be raised")
+    an[ArithmeticException] shouldBe thrownBy(Calculator.divide(x, y))
+
+  }
 
   it should "test multipy method" in {
 
@@ -62,17 +62,17 @@ class CalculatorSuite extends FlatSpec with GivenWhenThen with Matchers {
     When("Calculate percentage is called")
     Then("the correct result is retrieved")
 
-    Calculator.calculate_percentage(total, partialAmount) shouldBe 50
+    Calculator.calculatePercentage(total, partialAmount) shouldBe 50
 
     //scalastyle:off magic.number
-    Calculator.calculate_percentage(500, 470) shouldBe 94
+    Calculator.calculatePercentage(500, 470) shouldBe 94
 
   }
-//
-  //  it should "test main" in {
-  //
-  //    noException shouldBe thrownBy(Calculator.main(Array("100", "20", "456", "242")))
-  //
-  //  }
+
+  it should "test main" in {
+
+    noException shouldBe thrownBy(Calculator.main(Array("100", "20", "456", "242")))
+
+  }
 
 }

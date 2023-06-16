@@ -9,7 +9,7 @@ object Calculator {
    * @param partialAmount partial amount number
    * @return
    */
-  def calculate_percentage(total: Int, partialAmount: Int): Int = (partialAmount * 100) / total
+  def calculatePercentage(total: Int, partialAmount: Int): Int = (partialAmount * 100) / total
 
   /**
    * Simulate sum

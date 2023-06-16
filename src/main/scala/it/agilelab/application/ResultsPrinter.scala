@@ -17,7 +17,7 @@ object ResultsPrinter {
           |DIFF: ${diff(firstNumber, secondNumber)}
           |MULTIPLICATION: ${multiply(firstNumber, secondNumber)}
           |DIVISION: ${divide(firstNumber, secondNumber)}
-          |PERCENTAGE: ${calculate_percentage(total, partial_amount)}
+          |PERCENTAGE: ${calculatePercentage(total, partial_amount)}
           |""".stripMargin
     toReturn
   }
